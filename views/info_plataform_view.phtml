@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script src="<?php echo BASE_URL; ?>js/script.js"></script>
+    <title>MVC HTACCES</title>
+</head>
+<body>
+	<h2>PLATAFORMA</h2>
+    <?php echo $name; ?>
+    <h4>CLUSTERS DE LA PLATAFORMA</h4>
+    <?php
+        foreach ($datos as $dato)
+            echo "<h3>".$dato["nombre"]."</h3>";
+    ?>
+    <a href='<?php echo BASE_URL; ?>plataform/'>plataformas<a>
+    <p>Muestra hora</p>
+    <div id="time"></div>
+</body>
+</html>

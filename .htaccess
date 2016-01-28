@@ -1,0 +1,8 @@
+# Activar RewriteEngine
+RewriteEngine on
+
+# Reescribir la URL solicitada por el usuario
+#   Entrada:  info_plataform/ID_PLATAFORMA/NOMBRE
+#   Salida: info_plataform.php?id=ID_PLATAFORMA&nombre=NOMBRE
+RewriteRule ^info_plataform/(\w+)/(\w+)/?$ info_plataform.php?dat1=$1&dat2=$2
+RewriteRule ^plataform/?$ plataform.php

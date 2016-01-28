@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>MVC HTACCES</title>
+</head>
+<body>
+	<h2>PLATAFORMAS</h2>
+	<?php
+    	foreach ($datos as $dato) {
+        	$dat1=$dato['id_plataforma'];
+        	$dat2=$dato["nombre"];
+        	echo "<a href='".BASE_URL."info_plataform/".$dat1."/".$dat2."'><h3>".$dato["nombre"]."</h3></a>";
+
+    	}
+    	echo "<a href='".BASE_URL."'>index<a>";
+	?>
+</body>
+</html>
